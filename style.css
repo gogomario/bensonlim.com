@@ -1,0 +1,206 @@
+* {
+    font-family: Lato, sans-serif;
+    background-color: #fafafa;
+  }
+  
+  /* ---Text--- */
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-weight: 300;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 26px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+  
+  /* ---Spacing--- */
+  
+  .mb--lg {
+    margin-bottom: 32px;
+  }
+  
+  /* ---Animation--- */
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* ---Header--- */
+  
+  .header-wrapper {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+  }
+  
+  .header-content {
+    display: flex;
+    padding: 2vw 4vw;
+    animation: fade-in 2s ease;
+  }
+  
+  .header-logo {
+    width: auto;
+    max-width: 100%;
+    max-height: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+  .header-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .header-nav-wrapper {
+    text-align: right;
+    margin-left: auto;
+    padding-left: 2vw;
+  }
+  
+  .header-nav-list-wrapper {
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .header-nav-item {
+    display: inline-flex;
+    margin-left: 16px;
+    position: relative;
+    color: #000;
+  }
+  
+  #header-nav-icon {
+    display: none;
+  }
+  
+  .header-nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .header-nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  @media (max-width: 768px) {
+    .header-content {
+      padding: 6vw;
+    }
+  
+    #header-nav-list {
+      display: none;
+    }
+  
+    #header-nav-icon {
+      display: block;
+      align-items: center;
+      height: 24px;
+      width: 24px;
+    }
+  
+    #nav-icon:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s ease;
+    }
+  }
+  
+  /* ---Content--- */
+  
+  .content-wrapper {
+    display: flex;
+    padding-top: calc(40vmax / 5);
+    padding-bottom: calc(40vmax / 5);
+    padding-inline: 4vw;
+    justify-content: center;
+    animation: fade-in 3s ease;
+  }
+  
+  .content {
+    width: 60%;
+  }
+  
+  .wave-animation {
+    display: inline-block;
+    animation: wave-animation 2.5s infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      padding-inline: 6vw;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  }
+  
