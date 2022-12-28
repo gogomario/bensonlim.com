@@ -77,18 +77,6 @@ a {
   }
 }
 
-@keyframes fade-in-delay {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -242,7 +230,7 @@ a {
 .gallery {
   display: block;
   width: 100%;
-  animation: fade-in-delay 3s ease;
+  animation: fade-in 3s ease;
 }
 
 .gallery-row-wrapper {
