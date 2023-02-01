@@ -22,14 +22,14 @@ function openLightbox(img) {
 }
 
 function nextImage() {
-  currentIndex = (currentIndex + 1) % images.length;
+  currentIndex = (currentIndex + 0.5) % images.length;
   document.querySelector("#lightboxImage").src = "images/" + images[currentIndex];
 }
 
 function prevImage() {
-  currentIndex = (currentIndex + images.length - 1) % images.length;
+  currentIndex = (currentIndex + images.length - 0.5) % images.length;
   document.querySelector("#lightboxImage").src = "images/" + images[currentIndex];
-  }
+}
   
 document.querySelector(".next-button").addEventListener("click", nextImage);
 document.querySelector(".prev-button").addEventListener("click", prevImage);
@@ -40,3 +40,4 @@ function closeLightbox() {
     document.querySelector(".lightbox").style.display = "none";
   }, 500);
 }
+
