@@ -11,11 +11,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <script src="lightbox.js"></script>
   </head>
 
   <body>
     <!-- Header -->
-    <div class="header-wrapper">
+    <div  style="background-color: #fafafa" class="header-wrapper">
       <div class="header-content">
         <!-- Logo -->
         <a href="./">
@@ -29,9 +30,6 @@
         <div class="header-nav-wrapper">
           <div class="header-nav-list-wrapper">
             <div id="header-nav-list">
-              <!-- <a style="margin-left: 0" class="header-nav-item" href="./"
-                >Home</a
-              > -->
               <a
                 style="margin-left: 0"
                 class="header-nav-item"
@@ -42,16 +40,13 @@
                 >Chat</a
               >
             </div>
-            <!-- <a id="header-nav-icon" href="#"
-              ><span class="material-symbols-outlined">Menu</span></a
-            > -->
           </div>
         </div>
       </div>
     </div>
 
     <!-- Content -->
-    <div class="content-wrapper">
+    <div  style="background-color: #fafafa" class="content-wrapper">
       <div class="content">
         <h1 class="mb--xxl">
           Hi, I'm Benson <span class="wave-animation">👋</span>
@@ -68,35 +63,48 @@
     <div class="gallery">
       <div class="gallery-row-wrapper">
         <div class="gallery-column">
-          <img class="gallery-container--md" src="images/portfolio-1.png" />
-          <img class="gallery-container--sm" src="images/portfolio-2.png" />
+          <img class="gallery-container--md" src="images/portfolio1.png" onclick="openLightbox(this)"/>
+          <img class="gallery-container--sm" src="images/portfolio2.png" onclick="openLightbox(this)"/>
         </div>
         <div class="gallery-column">
-          <img class="gallery-container--lg" src="images/portfolio-3.png" />
+          <img class="gallery-container--lg" src="images/portfolio3.png" onclick="openLightbox(this)"/>
         </div>
       </div>
 
       <div class="gallery-row-wrapper">
         <div class="gallery-column">
-          <img class="gallery-container--sm" src="images/portfolio-4.png" />
-          <img class="gallery-container--md" src="images/portfolio-5.png" />
+          <img class="gallery-container--sm" src="images/portfolio4.png" onclick="openLightbox(this)"/>
+          <img class="gallery-container--md" src="images/portfolio5.png" onclick="openLightbox(this)"/>
         </div>
         <div class="gallery-column">
-          <img class="gallery-container--lg" src="images/portfolio-6.png" />
+          <img class="gallery-container--lg" src="images/portfolio6.png" onclick="openLightbox(this)"/>
         </div>
       </div>
 
       <div class="gallery-row-wrapper">
-          <img class="gallery-container--lg" src="images/portfolio-7.png" />
+          <img class="gallery-container--lg" src="images/portfolio7.png" onclick="openLightbox(this)"/>
       </div>
 
       <div class="gallery-row-wrapper">
         <div class="gallery-column">
-          <img class="gallery-container--lg" src="images/portfolio-8.png" />
+          <img class="gallery-container--lg" src="images/portfolio8.png" onclick="openLightbox(this)"/>
         </div>
         <div class="gallery-column">
-          <img class="gallery-container--lg" src="images/portfolio-9.png" />
+          <img class="gallery-container--lg" src="images/portfolio9.png" onclick="openLightbox(this)"/>
         </div>
+      </div>
+
+      <div class="lightbox" onclick="closeLightbox()">
+        <img src="" id="lightboxImage">
+        <span class="material-symbols-outlined close-button" onclick="closeLightbox()">
+          close
+          </span>
+        <!-- <span class="material-symbols-outlined previous-button" onclick="previousImage()">
+          arrow_back
+          </span>
+          <span class="material-symbols-outlined next-button" onclick="nextImage()">
+            arrow_forward
+            </span> -->
       </div>
 
     </div>
