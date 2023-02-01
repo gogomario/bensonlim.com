@@ -21,18 +21,18 @@ function openLightbox(img) {
   }, 50);
 }
 
-// function nextImage() {
-//   currentIndex = (currentIndex + 1) % images.length;
-//   document.querySelector("#lightboxImage").src = "images/" + images[currentIndex];
-// }
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  document.querySelector("#lightboxImage").src = "images/" + images[currentIndex];
+}
 
-// function prevImage() {
-//     currentIndex = (currentIndex + images.length - 1) % images.length;
-//     document.querySelector("#lightboxImage").src = "images/" + images[currentIndex];
-//   }
+function prevImage() {
+    currentIndex = (currentIndex + images.length - 1) % images.length;
+    document.querySelector("#lightboxImage").src = "images/" + images[currentIndex];
+  }
   
-// document.querySelector(".next-button").addEventListener("click", nextImage);
-// document.querySelector(".prev-button").addEventListener("click", prevImage);
+document.querySelector(".next-button").addEventListener("click", nextImage);
+document.querySelector(".prev-button").addEventListener("click", prevImage);
 
 function closeLightbox() {
   document.querySelector(".lightbox").style.opacity = "0";
