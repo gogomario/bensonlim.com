@@ -27,8 +27,8 @@ function nextImage() {
 }
 
 function prevImage() {
-    currentIndex = (currentIndex + images.length - 1) % images.length;
-    document.querySelector("#lightboxImage").src = "images/" + images[currentIndex];
+  currentIndex = (currentIndex + images.length - 1) % images.length;
+  document.querySelector("#lightboxImage").src = "images/" + images[currentIndex];
   }
   
 document.querySelector(".next-button").addEventListener("click", nextImage);
