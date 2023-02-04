@@ -15,114 +15,188 @@
 
   <body>
     <!-- Header -->
-    <div  style="background-color: #fafafa" class="header-wrapper">
-      <div class="header-content">
-        <!-- Logo -->
-        <a href="./">
-          <img
-            src="images/benson-lim.svg"
-            class="header-logo"
-          />
-          <img 
-            src="images/BL.png"
-            class="header-logo-sm">
-        </a>
+    <div style="background-color: #fafafa">
+      <div class="header-wrapper">
+        <div class="header-content">
+          <!-- Logo -->
+          <a href="./">
+            <img src="images/benson-lim.svg" class="header-logo" />
+            <img src="images/BL.png" class="header-logo-sm" />
+          </a>
 
-        <!-- Nav Items -->
-        <div class="header-nav-wrapper">
-          <div class="header-nav-list-wrapper">
-            <div id="header-nav-list">
-              <a
-                style="margin-left: 0"
-                class="header-nav-item"
-                href="mailto:hello@bensonlim.com"
-                >Email</a
-              >
-              <a class="header-nav-item" href="https://wa.me/60166807907"
-                >Chat</a
-              >
+          <!-- Nav Items -->
+          <div class="header-nav-wrapper">
+            <div class="header-nav-list-wrapper">
+              <div id="header-nav-list">
+                <a
+                  style="margin-left: 0"
+                  class="header-nav-item"
+                  href="mailto:hello@bensonlim.com"
+                  >Email</a
+                >
+                <a class="header-nav-item" href="https://wa.me/60166807907"
+                  >Chat</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Body -->
-    <div  style="background-color: #fafafa" class="content-wrapper">
-      <div class="content">
-        <h1 class="mb--xxl">
-          Hi, I'm Benson <span class="wave-animation">👋</span>
-        </h1>
-        <h2>
-          I’m a UX/UI and visual designer with over 10 years experience
-          researching, conceptualising and crafting both digital & non-digital
-          products.
-        </h2>
-      </div>
-    </div>
-
-    <!-- Gallery -->
-    <div class="gallery">
-      <div class="gallery-row-wrapper">
-        <div class="gallery-column">
-          <img class="gallery-container--md" src="images/portfolio1.png" onclick="openLightbox(this)"/>
-          <img class="gallery-container--sm" src="images/portfolio2.png" onclick="openLightbox(this)"/>
-        </div>
-        <div class="gallery-column">
-          <img class="gallery-container--lg" src="images/portfolio3.png" onclick="openLightbox(this)"/>
+      <!-- Body -->
+      <div class="content-wrapper--lg">
+        <div class="content">
+          <h1 class="mb--xxl">
+            Hi, I'm Benson <span class="wave-animation">👋</span>
+          </h1>
+          <h2>
+            I’m a UX/UI and visual designer with over 10 years experience
+            researching, conceptualising and crafting both digital & non-digital
+            products.
+          </h2>
         </div>
       </div>
 
-      <div class="gallery-row-wrapper">
-        <div class="gallery-column">
-          <img class="gallery-container--sm" src="images/portfolio4.png" onclick="openLightbox(this)"/>
-          <img class="gallery-container--md" src="images/portfolio5.png" onclick="openLightbox(this)"/>
+      <!-- Gallery -->
+      <div class="gallery">
+        <div class="gallery-row-wrapper">
+          <div class="gallery-column">
+            <img
+              class="gallery-container--md"
+              src="images/portfolio1.png"
+              onclick="openLightbox(this)"
+            />
+            <img
+              class="gallery-container--sm"
+              src="images/portfolio2.png"
+              onclick="openLightbox(this)"
+            />
+          </div>
+          <div class="gallery-column">
+            <img
+              class="gallery-container--lg"
+              src="images/portfolio3.png"
+              onclick="openLightbox(this)"
+            />
+          </div>
         </div>
-        <div class="gallery-column">
-          <img class="gallery-container--lg" src="images/portfolio6.png" onclick="openLightbox(this)"/>
-        </div>
-      </div>
 
-      <div class="gallery-row-wrapper">
-          <img class="gallery-container--lg" src="images/portfolio7.png" onclick="openLightbox(this)"/>
-      </div>
-
-      <div class="gallery-row-wrapper">
-        <div class="gallery-column">
-          <img class="gallery-container--lg" src="images/portfolio8.png" onclick="openLightbox(this)"/>
+        <div class="gallery-row-wrapper">
+          <div class="gallery-column">
+            <img
+              class="gallery-container--sm"
+              src="images/portfolio4.png"
+              onclick="openLightbox(this)"
+            />
+            <img
+              class="gallery-container--md"
+              src="images/portfolio5.png"
+              onclick="openLightbox(this)"
+            />
+          </div>
+          <div class="gallery-column">
+            <img
+              class="gallery-container--lg"
+              src="images/portfolio6.png"
+              onclick="openLightbox(this)"
+            />
+          </div>
         </div>
-        <div class="gallery-column">
-          <img class="gallery-container--lg" src="images/portfolio9.png" onclick="openLightbox(this)"/>
-        </div>
-      </div>
 
-      <div class="lightbox">
-        <img src="" id="lightboxImage">
-        <span class="material-symbols-outlined close-button" onclick="closeLightbox()">
-          close
+        <div class="gallery-row-wrapper">
+          <img
+            class="gallery-container--lg"
+            src="images/portfolio7.png"
+            onclick="openLightbox(this)"
+          />
+        </div>
+
+        <div class="gallery-row-wrapper">
+          <div class="gallery-column">
+            <img
+              class="gallery-container--lg"
+              src="images/portfolio8.png"
+              onclick="openLightbox(this)"
+            />
+          </div>
+          <div class="gallery-column">
+            <img
+              class="gallery-container--lg"
+              src="images/portfolio9.png"
+              onclick="openLightbox(this)"
+            />
+          </div>
+        </div>
+
+        <div class="lightbox">
+          <img src="" id="lightboxImage" />
+          <span
+            class="material-symbols-outlined close-button"
+            onclick="closeLightbox()"
+          >
+            close
           </span>
-        <span class="material-symbols-outlined prev-button" onclick="prevImage()">
-          arrow_back
+          <span
+            class="material-symbols-outlined prev-button"
+            onclick="prevImage()"
+          >
+            arrow_back
           </span>
-        <span class="material-symbols-outlined next-button" onclick="nextImage()">
-          arrow_forward
-        </span>
+          <span
+            class="material-symbols-outlined next-button"
+            onclick="nextImage()"
+          >
+            arrow_forward
+          </span>
+        </div>
+        <script src="lightbox.js?5"></script>
       </div>
-   <script src="lightbox.js?5"></script>
-    </div>
 
-    <div  style="background-color: #fafafa" class="content-wrapper">
-      <div class="content">
-        <h1 class="mb--xxl">
-          Hi, I'm Benson <span class="wave-animation">👋</span>
-        </h1>
-        <h2>
-          I’m a UX/UI and visual designer with over 10 years experience
-          researching, conceptualising and crafting both digital & non-digital
-          products.
-        </h2>
+      <div class="content-wrapper--md mt--xxxl">
+        <div class="content">
+          <div class="column-layout">
+            <div class="col-3">
+              <h2><b>About me</b></h2>
+            </div>
+            <div class="col-7">
+              <h2 class="text--light">
+                I'm a visual, user experience and interface designer based in
+                Kuala Lumpur. Currently working as a full-time Senior UI
+                Designer at RHB Banking Group.
+              </h2>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="content-wrapper--md mb--xxxl">
+        <div class="content">
+          <div class="column-layout">
+            <div class="col-3">
+              <h2><b>Experience</b></h2>
+            </div>
+            <div class="col-7">
+              <h2 class="mb--xxl text--light">
+                <b
+                  >More than just a concept, I believe in design as a creative
+                  approach to problem-solving.</b
+                >
+              </h2>
+              <h2 class="mb--xxl text--light">
+                For the past ten years, I have been helping clients from
+                startups to well-established companies to improve and add more
+                value to their products through user-centred design.
+              </h2>
+              <h2 class="text--light">
+                My passion in creating user-centred products that addresses the
+                goals and needs of an end-user has earned me a lot of successful
+                long term relationships with my clients.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img class="parallax-background" src="images/mountain.jpeg" />
     </div>
-    
   </body>
 </html>
