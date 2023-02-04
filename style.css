@@ -122,8 +122,17 @@ a {
 .header-logo {
   width: auto;
   max-width: 100%;
+  max-height: 20px;
+  transition: transform 0.2s ease;
+  display: block;
+}
+
+.header-logo-sm {
+  width: auto;
+  max-width: 100%;
   max-height: 24px;
   transition: transform 0.2s ease;
+  display: none;
 }
 
 .header-logo:hover {
@@ -176,6 +185,14 @@ a {
 @media (max-width: 768px) {
   .header-content {
     padding: 6vw;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-logo-sm {
+    display: block;
   }
 
   /* #header-nav-list {
@@ -302,27 +319,33 @@ a {
 
 .lightbox .close-button {
   position: absolute;
-  height: 32px;
+  width: 24px;
   top: 10px;
   right: 10px;
   cursor: pointer;
   color: white;
+  background-color: grey;
+  padding: 8px;
 }
 
 .lightbox .prev-button {
   position: absolute;
-  height: 32px;
+  width: 24px;
   top: 50%;
   left: 10px;
   cursor: pointer;
   color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
 }
 
 .lightbox .next-button {
   position: absolute;
-  height: 32px;
+  width: 24px;
   top: 50%;
   right: 10px;
   cursor: pointer;
   color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
 }
