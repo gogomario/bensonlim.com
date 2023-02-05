@@ -35,6 +35,7 @@ function prevImage() {
 
 document.querySelector(".next-button").addEventListener("click", nextImage);
 document.querySelector(".prev-button").addEventListener("click", prevImage);
+document.querySelector(".lightbox img").addEventListener("click", closeLightbox);
 
 function closeLightbox() {
   document.querySelector(".lightbox").style.opacity = "0";
