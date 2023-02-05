@@ -25,6 +25,10 @@ body {
   font-weight: 300;
 }
 
+.meta {
+  font-size: 14px;
+}
+
 .text--light {
   color: grey;
 }
@@ -43,7 +47,7 @@ a {
     font-size: 18px;
   }
 
-  body {
+  .meta {
     font-size: 12px;
   }
 }
